@@ -64,19 +64,3 @@ class FeishuTalkBot(BotClient):
             print(response.content)
         except Exception as e:
             logging.error("send message error", e)
-
-
-if __name__ == '__main__':
-    client_holder = BotClientHolder([FeishuTalkBot])
-    client_holder.gen_client("https://open.feishu.cn/open-apis/bot/v2/hook/2fe53c40-6210-4333-bb93-94164504e4d5",
-                             "Pxe1kwCri6BBI5Vv3X8Qjf")
-    message = TextMessage()
-    message.title = "title"
-    message.content = "content"
-    client_holder.send_message(message)
-    message = MarkdownMessage()
-    message.title = "title"
-    message.content = "content ~~asd~~"
-    client_holder.send_message(message)
-    message.template = 'blue'
-    client_holder.send_message(message)
