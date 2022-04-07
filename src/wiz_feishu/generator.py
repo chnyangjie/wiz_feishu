@@ -108,4 +108,5 @@ if __name__ == '__main__':
     m.add_element(elements.TextAndButton("text", elements.Button("button", "type", "id", elements.Confirm("title", "content"))))
     m.add_element(elements.TextAndOptions("text", elements.Options("placeholder", "type", "id", [elements.OptionItem("text", "value")], elements.Confirm("title", "content"))))
     m.add_element(elements.TextAndDatePicker("text", elements.DatePicker("placeholder", "type", "id", elements.Confirm("title", "content"), )))
-    FeishuRobotMessageGenerator.to_message(m, )
+    a = FeishuRobotMessageGenerator.to_message(m, )
+    b = FeishuRobotMessageGenerator.to_message(m, )

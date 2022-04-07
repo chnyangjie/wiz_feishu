@@ -43,7 +43,7 @@ setup(
     package_dir={'wiz_feishu': 'src/wiz_feishu'},
     packages=find_packages(where='src'),
     python_requires='>=3.6, <4',
-    install_requires=['requests', 'wiz-utils', 'wiz-message==2.0.4'],
+    install_requires=['requests', 'wiz-utils', 'wiz-message==2.0.5'],
     py_modules=['wiz_feishu'],
     project_urls={
         'Bug Reports': 'https://github.com/chnyangjie/wiz_feishu/issues',
